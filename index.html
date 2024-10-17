@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography by VIP Monty</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <img src="vip_photography_logo.png" alt="VIP Photography Logo" class="logo">
+            <h1>VIP Photography</h1>
+        </header>
+
+        <!-- Navigation Menu -->
+        <nav>
+            <ul class="menu">
+                <li><a href="#home" class="menu-link" data-target="home">Home</a></li>
+                <li><a href="#gallery" class="menu-link" data-target="gallery">Gallery</a></li>
+                <li><a href="#contact" class="menu-link" data-target="contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Home Section -->
+            <section id="home">
+                <h2>Welcome to VIP Photography</h2>
+                <p>Where we capture priceless moments. We deliver quality images and video as well as music videos that capture the moments in any occasion.</p>
+                <figure>
+                    <img src="IMG_8661.JPG" alt="A beautiful landscape" width="auto" height="250">
+                    <figcaption>A moment at Disneyland</figcaption>
+                </figure>
+                    <!-- Embed video -->
+                <video width="600" height="340" controls>
+                    <source src="OfficeWalk.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+
+            <!-- Gallery Section -->
+            <section id="gallery" style="display: none;">
+                <h2>Gallery</h2>
+                <p>Some of my Work.</p>
+                <picture>
+                    <source media="(max-width: 768px)" srcset="IMG_5381.jpg">
+                    <source media="(min-width: 769px)" srcset="IMG_5381.JPG">
+                    <img src="./IMG_5381.JPG" alt="A moment with water fun" width="auto" height="300">
+                    <figcaption>A moment with water fun</figcaption>
+                </picture>
+                    <!-- Example of another responsive image (you can add more here) -->
+                <picture>
+                    <source media="(max-width: 768px)" srcset="IMG_5667.jpg">
+                    <source media="(min-width: 769px)" srcset="IMG_5667.jpg">
+                    <img src="IMG_5667.JPG" alt="Responsive Gallery" width="auto" height="300">
+                    <figcaption>Fiery Festival Fun</figcaption>
+                </picture>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" style="display: none;">
+                <h2>Contact Information</h2>
+                <p>Feel free to reach out to me via the following platforms:</p>
+                <ul>
+                    <li>Email: vip_photography@email.com</li>
+                    <li><a href="https://instagram.com">Instagram</a></li>
+                    <li><a href="https://facebook.com">Facebook</a></li>
+                </ul>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 VIP Photography</p>
+        </footer>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
