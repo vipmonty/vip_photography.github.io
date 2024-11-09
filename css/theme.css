@@ -1,0 +1,128 @@
+/* theme.css
+ * Dark theme for VIP Photography site with updated layout and animations.
+ * Changes made:
+ * - Switched menu to the top of the page
+ * - Implemented a dark color scheme
+ * - Adjusted header and background colors to gradients
+ * - Modified animations for a new effect
+ */
+
+ body {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Container Layout Override */
+.container {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "footer";
+    gap: 20px;
+    max-width: 100%;
+    padding: 0 20px;
+}
+
+/* Header Style Overrides */
+header {
+    background: linear-gradient(to right, #333, #444);
+    text-align: center;
+    padding: 30px;
+    height: auto;
+    color: #ffffff;
+}
+
+header .logo {
+    width: 80px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+/* Dark Theme for Navigation */
+nav {
+    grid-area: nav;
+    background-color: #262626;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul.menu {
+    flex-direction: row;
+    gap: 30px;
+}
+
+nav ul.menu li a {
+    color: #e0e0e0;
+    background-color: transparent;
+    padding: 10px 15px;
+    border-radius: 3px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav ul.menu li a:hover {
+    color: #ffffff;
+    background-color: #555;
+}
+
+/* Button Style */
+#toggle-theme {
+    background-color: #444;
+    color: #e0e0e0;
+    border: 1px solid #666;
+    transition: background-color 0.3s ease;
+}
+
+#toggle-theme:hover {
+    background-color: #555;
+    color: #ffffff;
+}
+
+/* Main Content Dark Theme */
+main {
+    background-color: #2a2a2a;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Adjusted Animation */
+.animate-bounce {
+    animation: bounce-up 2s infinite;
+}
+
+@keyframes bounce-up {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Footer Dark Theme */
+footer {
+    background-color: #262626;
+    color: #e0e0e0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Mobile View Overrides */
+@media (max-width: 768px) {
+    nav ul.menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+}
